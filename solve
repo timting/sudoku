@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+require_relative 'board'
+
+board_rep = $stdin.read
+
+board = Board.new(board_rep)
+board.solve
+puts board.output
+puts board.valid?
